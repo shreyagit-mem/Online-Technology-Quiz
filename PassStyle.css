@@ -1,0 +1,28 @@
+@charset "ISO-8859-1";
+input[type=password] {
+    border:1px solid black;
+    padding-left:0.5%;
+    margin-bottom:10px;
+    border-radius:4px;
+    box-sizing:border-box;
+    height:40px;
+    width:60%;
+    font-size:18px;
+}
+input[type=password]:focus {
+    border:1px solid grey;
+} 
+input[type=submit] {
+    background:#ccc; 
+    border-radius: 20px; 
+    border:2px solid grey;
+    width:100px;
+    height:35px;
+    font-size:18px;
+    color:black;
+    margin-bottom:10px;
+}
+form
+{
+	margin-top:13%;
+}

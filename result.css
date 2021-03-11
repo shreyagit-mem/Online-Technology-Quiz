@@ -1,0 +1,44 @@
+@charset "ISO-8859-1";
+p
+{
+	color:purple;
+	text-align:center;
+	font-size:45px;
+	font-weight:bold;
+	font-family: 'Courier New', monospace;
+}
+h2
+{
+	color:red;
+	font-weight:bold;
+	text-align:center;
+	font-size:75px;
+}
+body
+{
+	backgroung-image-opacity:0.1;
+}
+/*a
+{
+	margin-left:70%;
+}*/
+tr td
+{
+	color:green;
+	height:45px;
+	width:200px;
+	font-size:20px;
+	text-align:center;
+	font-weight:bold;
+}
+th {
+  height: 70px;
+  color:blue;
+  margin-left:20px;
+  font-size:25px;
+}
+form
+{
+	font-align:center;
+	color:red;
+}

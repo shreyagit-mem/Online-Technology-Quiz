@@ -1,0 +1,55 @@
+@charset "ISO-8859-1";
+@charset "ISO-8859-1";
+body
+{
+	/*margin-top:50px;*/
+	color:green;
+	font-size:50px;
+	background-image:url("admback.jpg");
+}
+p
+{
+	margin-below:50px;
+	text-align:center;
+}
+td
+{
+	color:orange;
+	height:45px;
+	width:200px;
+	font-size:20px;
+	text-align:center;
+}
+th {
+  height: 70px;
+  color:brown;
+  margin-left:20px;
+  font-size:25px;
+}
+input[type=text] {
+    border:1px solid black;
+    height:40px;
+    width:50%;
+    border-radius:40px;
+    margin-left:10%;
+    margin-top:40px;
+    margin-bottom:4px;
+    font-size:22px;
+    color: #aa3db6;
+    padding-left:15px;
+}
+label
+{
+	color:blue;
+	font-size:25px;
+}
+input[type=submit]
+{
+	border-radius: 20px;
+	width:80px;
+    height:35px;
+}
+input[type=submit]:hover, input[type=submit]:active
+{
+	background-color:pink;
+}

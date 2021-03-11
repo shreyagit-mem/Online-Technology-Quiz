@@ -1,0 +1,31 @@
+@charset "ISO-8859-1";
+input[type=text] {
+    border:1px solid black;
+    padding-left:0.5%;
+    margin-bottom:10px;
+    border-radius:4px;
+    box-sizing:border-box;
+    height:40px;
+    width:75%;
+    font-size:18px;
+}
+input[type=text]:focus {
+    border:1px solid grey;
+} 
+input[type=submit] {
+    /*padding:5px 15px; */
+    background:#ccc; 
+    border-radius: 20px; 
+    border:2px solid grey;
+    width:100px;
+    height:35px;
+    font-size:18px;
+    color:black;
+   margin-left:33%;
+}
+h2
+{
+	color:blue;
+	margin-top:5px;
+	padding-left:260px;
+}

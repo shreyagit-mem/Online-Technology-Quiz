@@ -1,0 +1,121 @@
+
+<!DOCTYPE html>
+
+<html lang="en">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<head>
+	<title>		Techqui	</title>
+<link rel="stylesheet" type="text/css"   href="style.css">
+<link rel="stylesheet" type="text/css"   href="GiveQuiz.css">
+<!--<link rel="preconnect" href="https://fonts.gstatic.com">-->
+  <link    rel="stylesheet"    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Flamenco&display=swap" rel="stylesheet">
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+ <meta name="viewport" content="width=device-width,initial-scale=1.0">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+
+</head>
+<body>
+	<header>
+			<nav>
+				<div class="row clearfix">
+				
+<img src="logo2.jpg" class="logo" alt="logo" style="opacity: 0.9;  filter: grayscale(40%);" >
+					<ul class="main-nav animate__animated animate__slideInDown"   id="check-class" >
+						<li><a href="SLogin.html"><i style='font-size:22px' class='fas'>&#xf501;</i>Student </a></li>
+						<li><a href="Admin.html"><i style='font-size:22px'  class='fas'>&#xf406;</i>Admin</a></li>
+						<li><a href="#"><i style="font-size:22px" class="fa">&#xf091;</i>Leaderboard </a></li>
+						<li><a href="blogs.html"><i style='font-size:22px' class='fab'>&#xf37d;</i>Blogs </a></li>
+						<li><a href="AboutUs.html"><i style='font-size:22px' class='fas'>&#xf35a;</i>About </a></li>
+						<li><a href="contactus.html"><i style='font-size:22px' class='fas'>&#xf879;</i>Contact US </a></li>
+					
+					</ul>
+					<a href="#" class="mobile-icon"  onclick="slideshow()"><i class="fa fa-bars"></i></a>
+				</div>
+			</nav>
+		<div class="main-content-header">	
+		<h1>Test Your <span class="colorchange">Knowledge</span> <br>
+		 A Portal of Technologies           </h1>
+		 <button id="myBtn" class="btn btn-full" >Click to Give Quiz</button>    
+		 <a href="countdowntimer.html" class="btn btn-nav">Show me more</a>
+		 </div>
+		 </header>
+		 <div id="myModal" class="modal">
+  <!-- Modal content -->
+  <div class="modal-content">
+    <span class="close">&times;</span>
+    <h2><center>Quiz</center></h2><br><br>
+    <p><b>1. Which package contains the Random class in JAVA?</b></p>
+    <input type="radio" name="a1"> <label> java.util package </label>
+    <input type="radio" name="a1"> <label> java.lang package  </label>
+    <input type="radio" name="a1"> <label> java.awt package  </label>
+    <input type="radio" name="a1"><label> java.io package  </label>
+    <br><br>
+    <p><b>2. Which of the following is not a valid SQL type?</b></p>
+    <input type="radio" name="a2"><label> Float  </label> 
+    <input type="radio" name="a2"><label> Decimal  </label>  
+    <input type="radio" name="a2"> <label>Numeric  </label>  
+    <input type="radio" name="a2"> <label>Character  </label>
+    <br><br>
+    <p><b>3. Who developed the Python language?</b></p>
+    <input type="radio" name="a3"><label> Zim Den  </label>
+    <input type="radio" name="a3"><label> Guido van Rossum  </label>
+    <input type="radio" name="a3"><label> Niene Stom  </label>
+    <input type="radio" name="a3"><label> Wick van Rossum  </label>
+    <br><br>
+    <p><b>4. Which of the following language is used in Data science?</b></p>
+    <input type="radio" name="a4"><label> C  </label>
+    <input type="radio" name="a4"><label> C++  </label>
+    <input type="radio" name="a4"> <label>R  </label>
+    <input type="radio" name="a4"> <label>Ruby  </label>
+    <br><br>
+    <center><button class="button" onclick="myFunction()">Submit</button></center>
+  </div>
+  </div>
+<script>
+	function slideshow()
+	{
+		var x=document.getElementById('check-class');
+		if(x.style.display === "none")
+		{	x.style.display="block";
+		}else
+		{	x.style.display="none";
+		}
+	}
+</script>
+<script>
+//Get the modal
+var modal = document.getElementById("myModal");
+
+// Get the button that opens the modal
+var btn = document.getElementById("myBtn");
+
+// Get the <span> element that closes the modal
+var span = document.getElementsByClassName("close")[0];
+
+// When the user clicks the button, open the modal 
+btn.onclick = function() {
+  modal.style.display = "block";
+}
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  modal.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == modal) {
+    modal.style.display = "none";
+  }
+}
+</script>
+<script>
+function myFunction() {
+    alert("For more such exciting quizzes click OK to login")
+	location.replace("SLogin.html")
+}
+</script>
+</body>
+</html>

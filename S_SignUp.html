@@ -1,0 +1,344 @@
+<html>
+<head>
+<meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+<title> Techqui </title>
+<link rel="stylesheet" type="text/css"   href="Home_Template.css">
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.css">
+<!-- link rel="stylesheet" type="text/css"   href="style.css"-->
+<link rel="stylesheet"    href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css">
+<link href="https://fonts.googleapis.com/css2?family=Flamenco&display=swap" rel="stylesheet">
+<script src='https://kit.fontawesome.com/a076d05399.js'></script>
+<style>
+*
+{
+	margin: 0px;
+	padding: 0px;
+	box-sizing: border-box;
+}
+body
+{
+	font-size: 20px;
+	overflow-x: hidden;
+	color: white;
+	font-family: 'Flamenco', cursive;
+}
+
+header
+{
+	background-image:linear-gradient(rgba(0,0,0,0.3),rgba(0,0,0,0.3)),url('background.jpeg'); 
+	background-size: cover;
+	  background-repeat: no-repeat;
+	 height:150%;
+	
+	
+
+}
+
+.clearfix:after
+	{
+		content: ".";
+		visibility: hidden;
+		display:block;
+		height:0px;
+		clear: both;
+	}
+
+
+
+
+.row
+{
+	max-width: 1680px;
+	margin: 0 auto;
+	height:140px;
+	
+}
+
+.logo
+{
+	height: 120px;
+	width: auto;
+	float: left;
+	margin-left:100px;
+	
+	margin-top: 19px;
+}
+
+
+
+.main-nav
+{
+
+font-size: 16px;
+width:auto;
+	float: right;
+	
+	margin-top:50px;
+	margin-left: 2px;
+}
+
+.main-nav li
+{
+	display: inline-block;
+	list-style: none;
+	margin-left: 100px;
+	
+}
+ 
+.main-nav li a
+{
+	font-family: 'Flamenco', cursive;
+	padding: 5px 0px;
+	color:white;
+	text-decoration: none;
+	text-transform: uppercase;
+	font-size: 130%;
+	font-weight: 100%;
+
+}
+
+.main-nav li a:hover
+{
+	border-bottom: 2px solid #bf55ec;
+}
+
+
+
+.main-content-header
+{
+	width: 1180px;
+	position: absolute;
+	/*border: 1px solid red;*/
+	top:55%;
+	left: 50%;
+	transform: translate(-50%,-50%);
+}
+
+h1
+{
+	color: white;
+	font-size: 240%;
+	word-spacing: 10px;
+	letter-spacing: 3px;
+	margin-bottom: 20px;
+	/*text-transform: uppercase;*/
+ 	 font-variant: small-caps;
+ 	 font-weight: lighter;
+}
+
+.btn 
+{
+	display: inline-block;
+	padding: 6px 40px;
+	font-weight: lighter;
+	text-decoration: none;
+ 	text-transform: uppercase;
+ 	border-radius: 200px;
+ 	transition: background-color 0.2s,border 0.2s,color 0.2s;
+}
+
+.btn-full
+{
+	background-color: transparent;
+	color: #bf55ec;
+	margin-right: 15px;
+	border: 1px solid #bf55ec;
+}
+
+.btn-full:hover
+{
+	background-color: white;
+}
+
+.btn-nav
+{
+	background-color: transparent;
+	color: white;
+	border: 1px solid white;
+	
+}
+.btn-nav:hover
+{
+	background-color: #bf55ec;
+}
+
+.colorchange
+{
+	animation: colorchangeKnowledge 2s infinite;
+}
+
+@keyframes colorchangeKnowledge
+{
+	0% {color:white;}
+	25%{color: #5900b3;}
+	50%{color:  #ff0066;}
+	100%{color: #002e4d ;}   
+
+}
+
+.mobile-icon
+{
+	display: none;
+}
+
+/*Responsiveness*/
+@media only screen and (max-width: 1180px) {
+		.main-content-header
+		{
+			width: 100%;
+			padding: 0 2%;
+		}
+}
+@media only screen and (max-width:998px)
+ {
+	h1{   font-size: 200%;}
+}
+@media only screen and (max-width:768px)
+ {
+	h1{   font-size: 180%;}
+
+	.main-nav
+	{
+		display: none;
+	}
+
+	.mobile-icon
+	{
+		display: inline-block;
+		color: white;
+		float: right;
+		margin-top: 30px;
+		margin-right: 20px;
+	}
+	.main-nav
+	{
+		margin-top: 50px;
+		float: right;
+	}
+	.main-nav li
+	{
+		display: block;
+		margin-top: 10px;
+	}
+
+}
+
+@media only screen  and (max-width: 512px)
+{
+	.main-content-header
+	{
+		margin-top: 50px;
+	}
+	.btn-full
+	{
+		margin-bottom: 20px;
+	}
+	h1
+	{
+		font-size: 160%;
+	}
+} 
+
+@media only screen  and (max-width: 365px)
+{
+	.main-content-header
+	{
+		margin-top: 60px;
+		margin-bottom: 30px;
+	}
+}
+
+@media only screen  and (max-width: 320px)
+{
+.mobile-icon
+	{
+		display: inline-block;
+		color: white;
+		float: right;
+		margin-top: 30px;
+		margin-right: 20px;
+	}
+	.btn-full
+	{
+		margin-bottom: 20px;
+	}
+	h1
+	{
+		font-size: 160%;
+	}
+	.main-content-header
+	{
+		margin-top: 60px;
+		margin-bottom: 30px;
+	}
+	.main-nav
+	{
+		margin-top: 50px;
+		float: right;
+	}
+	.main-nav li
+	{
+		display: block;
+		margin-top: 10px;
+	}
+
+}
+
+</style>
+</head>
+<body>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+<header>
+		<nav>
+			<div class="row clearfix">
+			<a href="index.html">
+<img src="logo2.jpg" class="logo" alt="logo" style="opacity: 0.9;  filter: grayscale(40%);" ></a>
+					<ul class="main-nav animate__animated animate__slideInDown"   id="check-class" >
+						<li><a href="SLogin.html"><i style='font-size:22px' class='fas'>&#xf501;</i>Student </a></li>
+						<li><a href="Admin.html"><i style='font-size:22px'  class='fa'>&#xf406;</i>Admin</a></li>
+						<li><a href="#"><i style="font-size:22px" class="fa">&#xf091;</i>Leaderboard </a></li>
+						<li><a href="blogs.html"><i style='font-size:22px' class="fab">&#xf37d;</i>Blogs </a></li>
+						<li><a href="AboutUs.html"><i style='font-size:22px' class="fas">&#xf35a;</i>About </a></li>
+						<li><a href="contactus.html"><i style='font-size:22px' class='fas'>&#xf879;</i>Contact US </a></li>
+					
+					</ul>
+					<a href="#" class="mobile-icon"  onclick="slideshow()"><i class="fa fa-bars"></i></a>
+				</div>
+			</nav>
+<div class="transbox">
+<form method=post   action=S_Regis>
+<b><center><p>Student Sign Up</p></center></b><br>
+<center><input type="text" name="name" required = "required" placeholder="Name"/></center> <br>
+<center><input type="text" name="univ" placeholder="University" required="required" /></center><br>
+<center><input type="text" name="colg" placeholder="College" required="required"/></center> <br>
+<center>Date of birth : <input type="date" name="dob" /></center><br>
+<center><input type="text" name="phnno" pattern="[0-9]{10}" required="required" placeholder="Contact No." /></center> <br>
+<center><input type="email" name="email" required="required" placeholder="Email id" /></center> <br>
+<center><input type="password" name="passwd1" required ="required" id="pwd" placeholder="Password" minlength="8" maxlength="12" /></center> <br>
+<center><input type="password" name="passwd2" required ="required" id="cnfrm" placeholder="Confirm Password"/></center> <br>
+<div class="registrationFormAlert" style="color:green;" id="CheckPasswordMatch"> 
+<script>
+	function checkPasswordMatch() {
+        var password = $("#pwd").val();
+        var confirmPassword = $("#cnfrm").val();
+        if (password != confirmPassword)
+            $("#CheckPasswordMatch").html("Password does not match!");
+        else
+            $("#CheckPasswordMatch").html("Password match.");
+    }
+    $(document).ready(function () {
+       $("#cnfrm").keyup(checkPasswordMatch);
+    });
+</script>
+</div>
+<center><input type="radio" name="gender" value="Male" autocomplete="on"/>Male   
+      <input type="radio" name="gender" value="Female" /> Female
+      <input type="radio" name="gender" value="Other" />Other</center><br>
+<center><input type="submit" value="Submit" />
+<input type="reset" value="Reset" /></center>
+</form>
+</div>
+</header>
+</body>
+</html>
